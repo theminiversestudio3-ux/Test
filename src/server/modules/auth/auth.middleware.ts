@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
-import { adminAuth, adminDb } from '../core/firebaseAdmin';
-import { logger } from '../core/logger';
+import { adminAuth, adminDb } from '../../core/firebaseAdmin';
+import { logger } from '../../core/logger';
 
 export interface AuthenticatedRequest extends Request {
   user?: {
